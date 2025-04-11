@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Perhitungan Diskon</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Aplikasi Perhitungan Diskon</h1>
+        <label for="hargaAwal">Harga Awal</label>
+        <input type="text" id="hargaAwal" placeholder="Contoh: 50.000" oninput="formatInputHarga()" required>
+        <label for="persenDiskon">Persen Diskon</label>
+        <input type="number" id="persenDiskon" placeholder="Contoh: 20" required>
+        <button onclick="hitungDiskon()">Hitung Diskon</button>
+        <div class="result">
+            <p id="hasilDiskon"></p>
+            <p id="hargaSetelahDiskon"></p>
+        </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
